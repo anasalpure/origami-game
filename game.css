@@ -1,0 +1,275 @@
+body{
+  overflow: auto !important;
+}
+
+#wrapper {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+
+#sidebar-wrapper {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background: #fff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;	
+}
+
+#sidebar-wrapper .game-content {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+#wrapper.toggled #sidebar-wrapper {
+  width: 0px;
+}
+
+#page-content-wrapper {
+  width: auto;
+}
+
+.fixed-btn.menu-game-toggle{
+  padding: 5px 15px;
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+  top: 10px;
+  background-color: transparent;
+  border: 0;
+  color: #ea754e;
+  font-size: 20px;
+}
+.fixed-btn.menu-game-toggle:hover,
+.fixed-btn.menu-game-toggle:focus{
+  color: #e95726;
+  outline: none;
+}
+
+@media(min-width:1000px) {
+body{
+  overflow: hidden !important;
+}
+#wrapper {
+  padding-left: 50%;
+}
+
+#wrapper.toggled {
+  padding-left: 0px;
+}
+  
+#sidebar-wrapper {
+  width: 50%;
+}
+  
+#wrapper.toggled #sidebar-wrapper {
+  width: 0;
+}
+  
+#page-content-wrapper {
+  width: 50%;
+  position: absolute;
+}
+
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -50%;
+  width:100%;
+}
+
+.fixed-btn.menu-game-toggle{
+  right: -40px;
+}
+
+}
+
+
+
+
+#wrapper.toggled .game-content,
+#wrapper.toggled .fixed-btn.menu-game-toggle{
+  opacity: 0;
+}
+
+
+
+/***************************/
+
+.game-content{
+  padding: 60px 40px 20px;
+}
+
+.game-content span.img-1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.game-content span.img-2{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.game-content .game {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  border: 2px solid #9e9e9e;
+  padding: 50px 15px;
+}
+
+.game-content #notes,
+.game-content #new-game{
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, 0);
+  background-color: #8bc34a;
+  color: #fff;
+  border: unset;
+  padding: 10px 30px;
+}
+.game-content #notes{
+    top: -22px;
+    min-width: 80%;
+    max-width: 98%;
+    text-align: center;
+}
+
+.game-content #new-game{
+  bottom: -22px;
+}
+.game-content #new-game:hover,
+.game-content #new-game:focus{
+  background-color: #fff;
+  color: #8bc34a;
+  outline: none;
+  border: 1px solid #9e9e9e;
+}
+.game-content .next-step-col{
+  text-align: center;
+}
+.game-content .next-step-col h5{
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #9e9e9e;
+}
+
+.game-content .next-step-col #next-step img {
+  width: 50%;
+  margin-top: 15px;
+}
+
+.game-content .next-step-col #next-step:hover,
+.game-content .next-step-col #next-step:focus{
+  opacity: 0.8;
+}
+
+
+.game-content #steps .step-item{
+  width: 60px;
+  margin: 1px;
+}
+
+.game-content #solations .solation-item{
+  width: 100px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.game-content #more-note{
+  text-align: center;
+}
+.game-content #more-note .success-box h3{
+  color: #ff5722;
+  margin-top: 10px;
+}
+.game-content #more-note .success-box h4{
+  color: #689f38;
+}
+
+.game-content #more-note .success-box{
+  border-top: 2px solid #9e9e9e;
+  display: block;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+.game-content #more-note .fail-box h3{
+  color: #ff5722;
+  margin-top: 10px;
+}
+.game-content #more-note .fail-box h4{
+  color: #ff5722;
+}
+
+.game-content #more-note .fail-box{
+  border-top: 2px solid #9e9e9e;
+  display: block;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+
+@media(min-width:1000px) {
+  .game-content{
+    padding: 40px 40px 20px;
+  }
+}
+
+@media(min-width:1200px) {
+  .game-content{
+    padding: 90px 80px 20px;
+  }
+}
+
+@media(min-width:1400px) {
+  .game-content{
+    padding: 90px 80px 20px;
+  }
+  .game-content .game {
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 767px){
+  .game-content{
+    padding: 75px 10px 20px;
+  }
+
+  .game-content #solations{
+    display: flex;
+    margin-top: 20px;
+  }
+  .game-content .next-step-col #next-step img {
+    width: 65px;
+  }
+  .game-content .game {
+    min-height: auto;
+  }
+  .game-content #solations .solation-item {
+    width: 70px;
+  }
+  .game-content #steps{
+    margin-bottom: 15px;
+  }
+  .game-content #notes {
+    min-width: 96%;
+  }
+}

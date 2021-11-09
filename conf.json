@@ -1,0 +1,20 @@
+{
+  "root":"subul/images",
+  "games":[
+    {
+      "id":0,
+      "root":"game0",
+      "steps":8
+    },
+    {
+      "id":1,
+      "root":"game1",
+      "steps":6
+    },
+    {
+      "id":2,
+      "root":"game2",
+      "steps":7
+    }
+  ]
+}

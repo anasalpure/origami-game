@@ -1,0 +1,453 @@
+
+@font-face { font-family: frutiger; src: url('../Fonts/FrutigerLTArabic-75Black.ttf');}
+
+#wrapper::before {
+	content: '';
+	position: fixed;
+	background-image: url(../img/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -2;
+}
+
+#wrapper::after {
+	content: '';
+	position: fixed;
+	background-image: url(../img/background-icon.png);
+	background-repeat:no-repeat;
+	background-position: center;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	}
+
+.timer {
+    text-align: center;
+}
+
+.timer div {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.timer h1 {
+    color: #8BC34A;
+    display: inline-block;
+    border: 1px solid #ea754e;
+    padding: 5px 10px;
+    font-size: 70px;
+    font-weight: 700;
+}
+@media(min-width:1000px) {
+    .timer h1 {
+        font-size: 40px;
+    }
+    #wrapper.toggled .timer.margin-top-50{
+        margin-top: 50px !important;
+    }
+    #wrapper .timer.margin-top-50{
+        margin-top: 25px !important;
+    }
+}
+
+.timer p {
+    font-size: 10px;
+    text-align: center;
+    font-weight: 700;
+    color: #ff5722;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img{
+    width: 80px;
+}
+
+.content {
+    text-align: center;
+
+}
+
+.content .title {
+    display: flex;
+    justify-content: center;
+}
+
+.content .title .icon-title {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.content .title img {
+    display: flex;
+    width: 50px;
+}
+
+
+.content h1 {
+    color: #8bc34a;
+    font-size: 24px;
+}
+
+.content h2 {
+    color: #ff5722;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.content .description p {
+    color: #9e9e9e;
+    font-weight: 500;
+}
+
+.content .links div{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.btn {
+    vertical-align:initial;
+}
+
+.content .links .button {
+        display: inline-block;
+        border: none;
+        padding: 8px 16px;
+        overflow: visible;
+        background: #8bc34a;
+        color: #fff;
+        border-radius: 4px;
+        text-align: center;
+        text-decoration: none;
+}
+
+.content .links h3 {
+    font-size: 14px;
+    color: #ff5722;
+}
+
+.footer-social-links {
+    list-style: none;
+    margin: 0 10px;
+    margin-top: 3px;
+    padding: 0;
+}
+.footer-social-links li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.social-footer .footer-social-links li a {
+    color: #9e9e9e;
+    font-size: 20px;
+    padding: 0 7px;
+}
+
+
+.modal {
+    top: 30%;
+}
+
+.modal-header img{
+    width: 60px;
+    margin: auto;
+}
+
+.modal-header {
+    text-align: center;
+    border: none;
+    padding-bottom: 0;
+}
+
+.modal-header .close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #9e9e9e;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-body p {
+    color: #9e9e9e;
+    border: none;
+}
+
+.modal-body input {
+    background-color: #8BC34A;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    width: 56%;
+    height: 48px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    opacity: 0.8;
+}
+
+.modal-body input::placeholder {
+    color: #FFF;
+}
+
+.modal-body input:focus {
+    border: none;
+    outline: none;
+}
+
+.modal-body button {
+    background-color: #ff8a65;
+    color: #e64a19;
+    height: 48px;
+    width: 48px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .timer div {
+        margin: 0 10px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .timer h1 {
+        border: none;
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .content h2 {
+        font-size: 16px;
+    }
+    .content h1 {
+        font-size: 18px;
+    }
+    .content .title img {
+        width: 46;
+    }
+}
+
+
+
+
+/* Margin Top */
+.margin-top-0   { margin-top: 0px  !important; }
+.margin-top-1   { margin-top: 1px  !important; }
+.margin-top-2   { margin-top: 2px  !important; }
+.margin-top-3   { margin-top: 3px  !important; }
+.margin-top-4   { margin-top: 4px  !important; }
+.margin-top-5   { margin-top: 5px  !important; }
+.margin-top-6   { margin-top: 6px  !important; }
+.margin-top-7   { margin-top: 7px  !important; }
+.margin-top-8   { margin-top: 8px  !important; }
+.margin-top-9   { margin-top: 9px  !important; }
+.margin-top-10  { margin-top: 10px !important; }
+.margin-top-11  { margin-top: 11px !important; }
+.margin-top-12  { margin-top: 12px !important; }
+.margin-top-13  { margin-top: 13px !important; }
+.margin-top-14  { margin-top: 14px !important; }
+.margin-top-15  { margin-top: 15px !important; }
+.margin-top-16  { margin-top: 16px !important; }
+.margin-top-17  { margin-top: 17px !important; }
+.margin-top-18  { margin-top: 18px !important; }
+.margin-top-19  { margin-top: 19px !important; }
+.margin-top-20  { margin-top: 20px !important; }
+.margin-top-21  { margin-top: 21px !important; }
+.margin-top-22  { margin-top: 22px !important; }
+.margin-top-23  { margin-top: 23px !important; }
+.margin-top-24  { margin-top: 24px !important; }
+.margin-top-25  { margin-top: 25px !important; }
+.margin-top-26  { margin-top: 26px !important; }
+.margin-top-27  { margin-top: 27px !important; }
+.margin-top-28  { margin-top: 28px !important; }
+.margin-top-29  { margin-top: 29px !important; }
+.margin-top-30  { margin-top: 30px !important; }
+.margin-top-31  { margin-top: 31px !important; }
+.margin-top-32  { margin-top: 32px !important; }
+.margin-top-33  { margin-top: 33px !important; }
+.margin-top-34  { margin-top: 34px !important; }
+.margin-top-35  { margin-top: 35px !important; }
+.margin-top-36  { margin-top: 36px !important; }
+.margin-top-37  { margin-top: 37px !important; }
+.margin-top-38  { margin-top: 38px !important; }
+.margin-top-39  { margin-top: 39px !important; }
+.margin-top-40  { margin-top: 40px !important; }
+.margin-top-41  { margin-top: 41px !important; }
+.margin-top-42  { margin-top: 42px !important; }
+.margin-top-43  { margin-top: 43px !important; }
+.margin-top-44  { margin-top: 44px !important; }
+.margin-top-45  { margin-top: 45px !important; }
+.margin-top-46  { margin-top: 46px !important; }
+.margin-top-47  { margin-top: 47px !important; }
+.margin-top-48  { margin-top: 48px !important; }
+.margin-top-49  { margin-top: 49px !important; }
+.margin-top-50  { margin-top: 50px !important; }
+.margin-top-51  { margin-top: 51px !important; }
+.margin-top-52  { margin-top: 52px !important; }
+.margin-top-53  { margin-top: 53px !important; }
+.margin-top-54  { margin-top: 54px !important; }
+.margin-top-55  { margin-top: 55px !important; }
+.margin-top-56  { margin-top: 56px !important; }
+.margin-top-57  { margin-top: 57px !important; }
+.margin-top-58  { margin-top: 58px !important; }
+.margin-top-59  { margin-top: 59px !important; }
+.margin-top-60  { margin-top: 60px !important; }
+.margin-top-61  { margin-top: 61px !important; }
+.margin-top-62  { margin-top: 62px !important; }
+.margin-top-63  { margin-top: 63px !important; }
+.margin-top-64  { margin-top: 64px !important; }
+.margin-top-65  { margin-top: 65px !important; }
+.margin-top-66  { margin-top: 66px !important; }
+.margin-top-67  { margin-top: 67px !important; }
+.margin-top-68  { margin-top: 68px !important; }
+.margin-top-69  { margin-top: 69px !important; }
+.margin-top-70  { margin-top: 70px !important; }
+.margin-top-71  { margin-top: 71px !important; }
+.margin-top-72  { margin-top: 72px !important; }
+.margin-top-73  { margin-top: 73px !important; }
+.margin-top-74  { margin-top: 74px !important; }
+.margin-top-75  { margin-top: 75px !important; }
+.margin-top-76  { margin-top: 76px !important; }
+.margin-top-77  { margin-top: 77px !important; }
+.margin-top-78  { margin-top: 78px !important; }
+.margin-top-79  { margin-top: 79px !important; }
+.margin-top-80  { margin-top: 80px !important; }
+.margin-top-81  { margin-top: 81px !important; }
+.margin-top-82  { margin-top: 82px !important; }
+.margin-top-83  { margin-top: 83px !important; }
+.margin-top-84  { margin-top: 84px !important; }
+.margin-top-85  { margin-top: 85px !important; }
+.margin-top-86  { margin-top: 86px !important; }
+.margin-top-87  { margin-top: 87px !important; }
+.margin-top-88  { margin-top: 88px !important; }
+.margin-top-89  { margin-top: 89px !important; }
+.margin-top-90  { margin-top: 90px !important; }
+.margin-top-91  { margin-top: 91px !important; }
+.margin-top-92  { margin-top: 92px !important; }
+.margin-top-93  { margin-top: 93px !important; }
+.margin-top-94  { margin-top: 94px !important; }
+.margin-top-95  { margin-top: 95px !important; }
+.margin-top-96  { margin-top: 96px !important; }
+.margin-top-97  { margin-top: 97px !important; }
+.margin-top-98  { margin-top: 98px !important; }
+.margin-top-99  { margin-top: 99px !important; }
+.margin-top-100 { margin-top: 100px !important; }
+
+/* Margin Bottom */
+.margin-bottom-0   { margin-bottom: 0px  !important; }
+.margin-bottom-1   { margin-bottom: 1px  !important; }
+.margin-bottom-2   { margin-bottom: 2px  !important; }
+.margin-bottom-3   { margin-bottom: 3px  !important; }
+.margin-bottom-4   { margin-bottom: 4px  !important; }
+.margin-bottom-5   { margin-bottom: 5px  !important; }
+.margin-bottom-6   { margin-bottom: 6px  !important; }
+.margin-bottom-7   { margin-bottom: 7px  !important; }
+.margin-bottom-8   { margin-bottom: 8px  !important; }
+.margin-bottom-9   { margin-bottom: 9px  !important; }
+.margin-bottom-10  { margin-bottom: 10px !important; }
+.margin-bottom-11  { margin-bottom: 11px !important; }
+.margin-bottom-12  { margin-bottom: 12px !important; }
+.margin-bottom-13  { margin-bottom: 13px !important; }
+.margin-bottom-14  { margin-bottom: 14px !important; }
+.margin-bottom-15  { margin-bottom: 15px !important; }
+.margin-bottom-16  { margin-bottom: 16px !important; }
+.margin-bottom-17  { margin-bottom: 17px !important; }
+.margin-bottom-18  { margin-bottom: 18px !important; }
+.margin-bottom-19  { margin-bottom: 19px !important; }
+.margin-bottom-20  { margin-bottom: 20px !important; }
+.margin-bottom-21  { margin-bottom: 21px !important; }
+.margin-bottom-22  { margin-bottom: 22px !important; }
+.margin-bottom-23  { margin-bottom: 23px !important; }
+.margin-bottom-24  { margin-bottom: 24px !important; }
+.margin-bottom-25  { margin-bottom: 25px !important; }
+.margin-bottom-26  { margin-bottom: 26px !important; }
+.margin-bottom-27  { margin-bottom: 27px !important; }
+.margin-bottom-28  { margin-bottom: 28px !important; }
+.margin-bottom-29  { margin-bottom: 29px !important; }
+.margin-bottom-30  { margin-bottom: 30px !important; }
+.margin-bottom-31  { margin-bottom: 31px !important; }
+.margin-bottom-32  { margin-bottom: 32px !important; }
+.margin-bottom-33  { margin-bottom: 33px !important; }
+.margin-bottom-34  { margin-bottom: 34px !important; }
+.margin-bottom-35  { margin-bottom: 35px !important; }
+.margin-bottom-36  { margin-bottom: 36px !important; }
+.margin-bottom-37  { margin-bottom: 37px !important; }
+.margin-bottom-38  { margin-bottom: 38px !important; }
+.margin-bottom-39  { margin-bottom: 39px !important; }
+.margin-bottom-40  { margin-bottom: 40px !important; }
+.margin-bottom-41  { margin-bottom: 41px !important; }
+.margin-bottom-42  { margin-bottom: 42px !important; }
+.margin-bottom-43  { margin-bottom: 43px !important; }
+.margin-bottom-44  { margin-bottom: 44px !important; }
+.margin-bottom-45  { margin-bottom: 45px !important; }
+.margin-bottom-46  { margin-bottom: 46px !important; }
+.margin-bottom-47  { margin-bottom: 47px !important; }
+.margin-bottom-48  { margin-bottom: 48px !important; }
+.margin-bottom-49  { margin-bottom: 49px !important; }
+.margin-bottom-50  { margin-bottom: 50px !important; }
+.margin-bottom-51  { margin-bottom: 51px !important; }
+.margin-bottom-52  { margin-bottom: 52px !important; }
+.margin-bottom-53  { margin-bottom: 53px !important; }
+.margin-bottom-54  { margin-bottom: 54px !important; }
+.margin-bottom-55  { margin-bottom: 55px !important; }
+.margin-bottom-56  { margin-bottom: 56px !important; }
+.margin-bottom-57  { margin-bottom: 57px !important; }
+.margin-bottom-58  { margin-bottom: 58px !important; }
+.margin-bottom-59  { margin-bottom: 59px !important; }
+.margin-bottom-60  { margin-bottom: 60px !important; }
+.margin-bottom-61  { margin-bottom: 61px !important; }
+.margin-bottom-62  { margin-bottom: 62px !important; }
+.margin-bottom-63  { margin-bottom: 63px !important; }
+.margin-bottom-64  { margin-bottom: 64px !important; }
+.margin-bottom-65  { margin-bottom: 65px !important; }
+.margin-bottom-66  { margin-bottom: 66px !important; }
+.margin-bottom-67  { margin-bottom: 67px !important; }
+.margin-bottom-68  { margin-bottom: 68px !important; }
+.margin-bottom-69  { margin-bottom: 69px !important; }
+.margin-bottom-70  { margin-bottom: 70px !important; }
+.margin-bottom-71  { margin-bottom: 71px !important; }
+.margin-bottom-72  { margin-bottom: 72px !important; }
+.margin-bottom-73  { margin-bottom: 73px !important; }
+.margin-bottom-74  { margin-bottom: 74px !important; }
+.margin-bottom-75  { margin-bottom: 75px !important; }
+.margin-bottom-76  { margin-bottom: 76px !important; }
+.margin-bottom-77  { margin-bottom: 77px !important; }
+.margin-bottom-78  { margin-bottom: 78px !important; }
+.margin-bottom-79  { margin-bottom: 79px !important; }
+.margin-bottom-80  { margin-bottom: 80px !important; }
+.margin-bottom-81  { margin-bottom: 81px !important; }
+.margin-bottom-82  { margin-bottom: 82px !important; }
+.margin-bottom-83  { margin-bottom: 83px !important; }
+.margin-bottom-84  { margin-bottom: 84px !important; }
+.margin-bottom-85  { margin-bottom: 85px !important; }
+.margin-bottom-86  { margin-bottom: 86px !important; }
+.margin-bottom-87  { margin-bottom: 87px !important; }
+.margin-bottom-88  { margin-bottom: 88px !important; }
+.margin-bottom-89  { margin-bottom: 89px !important; }
+.margin-bottom-90  { margin-bottom: 90px !important; }
+.margin-bottom-91  { margin-bottom: 91px !important; }
+.margin-bottom-92  { margin-bottom: 92px !important; }
+.margin-bottom-93  { margin-bottom: 93px !important; }
+.margin-bottom-94  { margin-bottom: 94px !important; }
+.margin-bottom-95  { margin-bottom: 95px !important; }
+.margin-bottom-96  { margin-bottom: 96px !important; }
+.margin-bottom-97  { margin-bottom: 97px !important; }
+.margin-bottom-98  { margin-bottom: 98px !important; }
+.margin-bottom-99  { margin-bottom: 99px !important; }
+.margin-bottom-100 { margin-bottom: 100px !important; }
